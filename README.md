@@ -1,9 +1,8 @@
 # linux_notes
 
-This repo is basic my own collected notes archive for linux systems.
-It's highly adviced to use official linux or related linux distrubutions documentation, forums or other official documentation sources.
+This repo is basic, my own collected notes archive about linux systems, commands and other categories.
+It's highly adviced to use official linux or related linux distrubutions documentation, forums or other official linux information sources.
 
-==
 
 ** IMPORTANT! **
 
