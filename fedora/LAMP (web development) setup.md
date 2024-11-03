@@ -90,14 +90,17 @@ By default in fedora, apache http server uses "apache" user, some website script
 sudo chown -R apache:apache /var/www/html
 ```
 
-## File permissions (change /var/www/html to your web path if different www directory than default is used):
+## File permissions
+
+-> change /var/www/html to your web path if different www directory than default is used
 
 ```
 sudo find /var/www/html -type d -exec chmod 755 {} \; # for directories
 sudo find /var/www/html -type f -exec chmod 644 {} \; # for files
 ```
 
-If SELINUX is enabled (change /var/www/html to your web path if different www directory than default is used)
+If SELINUX is enabled 
+-> change /var/www/html to your web path if different www directory than default is used
 
 ```
 chcon -R -t httpd_sys_rw_content_t /var/www/html
@@ -105,6 +108,7 @@ chcon -R -t httpd_sys_rw_content_t /var/www/html
 ```
 
 ## Fedora docs
--- Tip: do not skip sections in official fedora docs! These articles has important information which is required for final secure apache http setup!
+
+Tip: do not skip sections in official fedora docs! These articles has important information which is required for final secure apache http setup!
 -----------------------------
 <a href="https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-apache-http-server">Fedora docs</a>
