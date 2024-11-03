@@ -2,7 +2,7 @@ Last update: 2024 august 27th
 
 # INTRO
 
-Before starting to use any of commands, please make extra settings, scripts and other important backups.
+Before starting to use any commands, please make extra settings, scripts and other important backups.
 
 Also while making these notes, I (sanctum32) used official repositories and packages provided in default fedora repositories. Copr repository was not used
 
