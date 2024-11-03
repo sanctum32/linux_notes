@@ -69,10 +69,16 @@ sudo dnf install php-bcmath php-dbg php-gd php-mbstring php-pecl-xdebug3 php-pec
     php-twig php-pdo php-odbc php-mysqlnd php-oauth phpunit php-soap
 ```
 
-## Optional additional software:
-* composer         # Dependency Manager for PHP
+## Composer - php packages manager
 
--- after php install, do apache restart
+This is very helpful tool to manage external php dependencies (frameworks)
+
+```
+sudo dnf install composer
+```
+
+
+after php and optional packages installation, do apache restart
 
 ```
 sudo systemctl restart httpd
