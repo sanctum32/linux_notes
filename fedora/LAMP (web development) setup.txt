@@ -63,6 +63,10 @@ Optional additional software:
 -- info.php script text(without quates):
     "<?php phpinfo(); ?>"
 
+Extra information:
+  By default in fedora, apache http server uses "apache" account, some website scripts may can encounter issues and related permissions may should be set for "apache" in order to resolve some of them
+
+
 -----------------------------
 -- Fedora docs
 -- Tip: do not skip sections in official fedora docs! These articles has important information which is required for final secure apache http setup!
