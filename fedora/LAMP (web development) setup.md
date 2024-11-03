@@ -1,5 +1,11 @@
 Last update: 2024 august 27th
 
+# INTRO
+
+Before starting to use any of commands, please make extra settings, scripts and other important backups.
+
+Also while making these notes, I (sanctum32) used official repositories and packages provided in default fedora repositories. Copr repository was not used
+
 ## Apache setup
 ***
     
@@ -91,7 +97,7 @@ sudo chown -R apache:apache /var/www/html
 ```
 
 ## File permissions
-
+https://www.redhat.com/en/blog/linux-file-permissions-explained <- more information
 -> change /var/www/html to your web path if different www directory than default is used
 
 ```
@@ -111,4 +117,7 @@ chcon -R -t httpd_sys_rw_content_t /var/www/html
 
 Tip: do not skip sections in official fedora docs! These articles has important information which is required for final secure apache http setup!
 -----------------------------
-<a href="https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-apache-http-server">Fedora docs</a>
+<a href="https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-apache-http-server">Fedora docs - getting started with apache httpd server</a>
+<a href="https://fedoraproject.org/wiki/Administration_Guide_Draft/Permissions">Fedora docs - managing file permissions</a>
+
+
