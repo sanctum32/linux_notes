@@ -105,8 +105,9 @@ sudo find /var/www/html -type d -exec chmod 755 {} \; # for directories
 sudo find /var/www/html -type f -exec chmod 644 {} \; # for files
 ```
 
-If SELINUX is enabled 
--> change /var/www/html to your web path if different www directory than default is used
+## If SELINUX is enabled
+
+change /var/www/html to your web path if different www directory than default is used
 
 ```
 chcon -R -t httpd_sys_rw_content_t /var/www/html
