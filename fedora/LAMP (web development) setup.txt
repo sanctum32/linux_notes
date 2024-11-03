@@ -64,8 +64,15 @@ Optional additional software:
     "<?php phpinfo(); ?>"
 
 Extra information:
-  By default in fedora, apache http server uses "apache" account, some website scripts may can encounter issues and related permissions may should be set for "apache" in order to resolve some of them
+* By default in fedora, apache http server uses "apache" account, some website scripts may can encounter issues and related permissions may should be set for "apache" in order to resolve some of them
 
+File permissions (change /var/www/html to your web path if different www directory than default is used):
+sudo find /var/www/html -type d -exec chmod 755 {} \; # for directories
+sudo find /var/www/html -type f -exec chmod 644 {} \; # for files
+
+If SELINUX is enabled (change /var/www/html to your web path if different www directory than default is used)
+* chcon -R -t httpd_sys_rw_content_t /var/www/html
+* chcon -R -t httpd_sys_rw_content_t /var/www/html
 
 -----------------------------
 -- Fedora docs
