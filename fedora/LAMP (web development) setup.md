@@ -1,6 +1,6 @@
 Last update: 2024 august 27th
 
-# Apache setup
+## Apache setup
 ***
     
 ```
@@ -13,7 +13,7 @@ sudo firewall-cmd --permanent --add-service=https
 sudo systemctl reload firewalld
 ```
 
-# MariaDB setup
+## MariaDB setup
 ***
 
 ```
@@ -24,7 +24,7 @@ sudo systemctl status mariadb.service
 sudo mysql_secure_installation # tool configures mariadb via guided questions
 ```
 
-# PHP setup
+## PHP setup
 ***
 
 -- Packages to install:
@@ -63,7 +63,7 @@ sudo dnf install php-bcmath php-dbg php-gd php-mbstring php-pecl-xdebug3 php-pec
     php-twig php-pdo php-odbc php-mysqlnd php-oauth phpunit php-soap
 ```
 
-# Optional additional software:
+## Optional additional software:
 * composer         # Dependency Manager for PHP
 
 -- after php install, do apache restart
@@ -72,7 +72,7 @@ sudo dnf install php-bcmath php-dbg php-gd php-mbstring php-pecl-xdebug3 php-pec
 sudo systemctl restart httpd
 ```
 
-# Script to test php (remove script after test)
+## Script to test php (remove script after test)
 
 ```
 sudo vi /var/www/html/info.php # or sudo nano /var/www/html/info.php
@@ -83,14 +83,14 @@ info.php script text(without quates):
     "<?php phpinfo(); ?>"
 ```
 
-# Apache user permissions:
+## Apache user permissions:
 By default in fedora, apache http server uses "apache" user, some website scripts may can encounter issues and related permissions may should be set for "apache" user
 
 ```
 sudo chown -R apache:apache /var/www/html
 ```
 
-# File permissions (change /var/www/html to your web path if different www directory than default is used):
+## File permissions (change /var/www/html to your web path if different www directory than default is used):
 
 ```
 sudo find /var/www/html -type d -exec chmod 755 {} \; # for directories
@@ -104,7 +104,7 @@ chcon -R -t httpd_sys_rw_content_t /var/www/html
 chcon -R -t httpd_sys_rw_content_t /var/www/html
 ```
 
-# Fedora docs
+## Fedora docs
 -- Tip: do not skip sections in official fedora docs! These articles has important information which is required for final secure apache http setup!
 -----------------------------
 <a href="https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-apache-http-server">Fedora docs</a>
