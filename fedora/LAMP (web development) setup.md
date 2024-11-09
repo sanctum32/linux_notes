@@ -104,6 +104,8 @@ By default in fedora, apache http server uses "apache" user, some website script
 sudo chown -R apache:apache /var/www/html
 ```
 
+apache user could be swapped in "/etc/httpd/conf/httpd.conf"
+
 ## File permissions
 https://www.redhat.com/en/blog/linux-file-permissions-explained <- more information
 -> change /var/www/html to your web path if different www directory than default is used
