@@ -113,6 +113,8 @@ https://www.redhat.com/en/blog/linux-file-permissions-explained <- more informat
 ```
 sudo find /var/www/html -type d -exec chmod 755 {} \; # for directories
 sudo find /var/www/html -type f -exec chmod 644 {} \; # for files
+sudo chgrp -R apache /var/www
+sudo chmod -R g+w /var/www
 ```
 
 ## If SELINUX is enabled
