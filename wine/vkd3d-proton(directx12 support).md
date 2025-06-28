@@ -1,4 +1,4 @@
-sudo dnf install meson x86_64-w64-mingw32-gcc x86_64-w64-mingw32-g++ x86_64-w64-mingw32-widl glslang.x86_64 glslang.x86_64 mingw64-glslang.noarch mingw64-glslang.noarch
+sudo dnf install meson x86_64-w64-mingw32-gcc x86_64-w64-mingw32-g++ i686-w64-mingw32-gcc i686-w64-mingw32-g++ x86_64-w64-mingw32-widl glslang.x86_64 glslang.x86_64 mingw64-glslang.noarch mingw64-glslang.noarch
 
 git clone --recursive https://github.com/HansKristian-Work/vkd3d-proton ~/dxvk-proton && \
 cd ~/dxvk-proton && \
