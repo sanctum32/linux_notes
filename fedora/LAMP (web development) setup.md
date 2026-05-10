@@ -60,6 +60,9 @@ sudo dnf install php php-common php-cli phpunit php-intl php-bcmath
 | phpunit           | The PHP Unit Testing framework version (package name may could be different) |
 | php-soap          | A module for PHP applications that use the SOAP protocol |
 | php-pecl-zip      | A ZIP archive management extension |
+| php-gmp           | A module for PHP applications for using the GNU MP library |
+| php-intl          | Internationalization extension for PHP applications |
+| php-common        | Common files for PHP |
 
 More packages could be found by using command (without quates) "dnf search php-*"
 
@@ -68,7 +71,7 @@ Feel free to edit and add or remove package names in this command ("sudo dnf ins
 
 ```
 sudo dnf install php-bcmath php-dbg php-gd php-mbstring php-pecl-xdebug3 php-pecl-pcov php-pecl-imagick php-pecl-apcu php-fpm php-xml \
-    php-twig php-pdo php-odbc php-mysqlnd php-oauth phpunit php-soap php-pecl-zip
+    php-twig php-pdo php-odbc php-mysqlnd php-oauth phpunit php-soap php-pecl-zip php-gmp php-intl php-common
 ```
 
 ## Composer - php packages manager
